@@ -1,16 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import heroImage from "../assets/logo.webp"; // Add your hero image
 
 const Home = () => {
   return (
-    <div className="container-fluid bg-primary text-white hero-section py-5">
-      <div className="row justify-content-center">
-        <div className="col-md-8 text-center">
-          <h1 className="display-4">Hi, I'm Akil Fernando</h1>
-          <p className="lead">A passionate web developer and student, focusing on React, JavaScript, and full-stack development.</p>
-          <Link to="/about" className="btn btn-light btn-lg mt-3">Learn More About Me</Link>
-        </div>
-      </div>
+    <div className="container mt-4 text-center">
+      <img src={heroImage} alt="Hero" className="img-fluid rounded-3 mb-4" style={{ maxHeight: "400px" }} />
+      <h1>Welcome to My Portfolio</h1>
+      <p className="lead">I am Akil, a passionate developer building amazing applications.</p>
     </div>
   );
 };
