@@ -1,28 +1,31 @@
-/* Apply flexbox layout to the entire page */
+/* Ensure the entire page takes up full height */
 html, body {
   height: 100%;
   margin: 0;
 }
 
+/* Use flexbox to structure the page layout */
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* This ensures the footer stays at the bottom */
+  justify-content: space-between; /* Ensures content is spaced properly */
 }
 
+/* Main content area expands to fill available space */
 .main-content {
-  flex: 1; /* This takes up the available space */
+  flex: 1;
 }
 
-/* Footer Styling */
+/* Footer styling */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #333; /* Dark background for contrast */
+  color: white; /* White text for readability */
   text-align: center;
   padding: 20px;
-  margin-top: auto; /* Pushes the footer down */
+  margin-top: auto; /* Pushes footer to bottom */
 }
 
+/* Prevents unwanted margin below the navbar */
 .navbar {
-  margin-bottom: 0; /* Ensures the navbar doesn't add extra space */
+  margin-bottom: 0;
 }
